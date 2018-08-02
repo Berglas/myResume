@@ -1,144 +1,82 @@
 body {
     font-family: 'Fjalla One', Arial, sans-serif;
-    height: 100vh;
-    width: 100vw;
 }
 
-#menu-box {
-    background: rgb(93, 172, 129);
-    height: 60px;
+#menu {
+    position: fixed;
+    z-index: 70;
+    background: rgba(44, 44, 44, 1);
     width: 100%;
-    font-size: 14px;
 }
 
-#content {
+#menu li {
     float: left;
-    position: relative;
-    height: calc(100% - 60px);
-    width: 100%;
-    height: calc(100vh);
-    background-color: rgb(145, 173, 113);
-    text-align: center;
-}
-
-.logo-title {
-    position: relative;
-    height: 36px;
-    color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-}
-
-.logo-title:before {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border: 2px solid rgba(255, 255, 255, 1);
-    left: 8px;
-    top: 38px;
-    transform: rotate(45deg) translate(-50%, -50%);
-    border-radius: 10%;
-}
-
-.logo-title:after {
-    content: '－L．K－';
-    position: absolute;
+    margin: 0 5px;
     font-size: 14px;
-    top: 18px;
+
 }
 
-#menu-item {
-    margin-top: 100px;
-}
-
-a.animBtn:link,
-a.animBtn:visited {
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: 20px auto 0;
-    border: none;
-    background: rgba(255, 255, 255, 0);
-    color: rgb(250, 250, 250);
-    text-align: center;
+#menu a {
+    float: left;
+    padding: 10px 20px;
+    color: rgb(244, 244, 244);
     text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    letter-spacing: 1px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
-    z-index: 9999;
 }
 
-a.animBtn:link:after,
-a.animBtn:visited:after {
-    content: "";
-    position: absolute;
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
-    height: 0%;
-    left: 50%;
-    top: 50%;
+#menu .active a {
+    color: #fff;
+    background: rgba(244, 244, 244,0.2);
+}
+
+.section {
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #111;
+    height: 100vh;
+}
+
+.page1 {
+    background: rgb(255, 255, 255);
+    height: 100vh;
     width: 100%;
-    z-index: -1;
-    -webkit-transition: all .4s ease 0s;
-    -moz-transition: all .4s ease 0s;
-    -o-transition: all .4s ease 0s;
-    transition: all .4s ease 0s;
 }
 
-a.animBtn:link:hover,
-a.animBtn:visited:hover {
-    color: rgba(67, 67, 67, 0.9);
-    text-shadow: none;
+.Item {
+    filter: grayscale(70%);
+    float: left;
+    height: 100%;
+    width: 25%;
 }
 
-a.animBtn:link:hover:after,
-a.animBtn:visited:hover:after {
-    height: 420%;
+.Item:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
 }
 
-a.animBtn.themeA:after {
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+.Item h2 {
+    background: rgba(44, 44, 44, 0.2);
+    color: rgb(244, 244, 244);
+    height: 70px;
+    margin: 100% 10px 0 10px;
+    width: calc(100% - 20px);
 }
 
-a.animBtn.themeB:after {
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+.PROFILE {
+    background-image: url(../image/PROFILE.png);
+    background-size: cover;
 }
 
-a.animBtn.themeC:after {
-    opacity: .5;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+.RESUME {
+    background-image: url(../image/RESUME.jpg);
+    background-size: cover;
 }
 
-a.animBtn.themeC:hover:after {
-    height: 140%;
-    opacity: 1;
+.PORTFOLIO {
+    background-image: url(../image/PORTFOLIO.png);
+    background-size: cover;
 }
 
-a.animBtn.themeD:after {
-    width: 0%;
-    border-radius: 50%;
-    opacity: .5;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-a.animBtn.themeD:hover:after {
-    height: 450%;
-    width: 110%;
-    opacity: 1;
+.CONTACT {
+    background-image: url(../image/CONTACT.jpg);
+    background-size: cover;
 }

@@ -9,18 +9,59 @@
     <meta name="googlebot" content="noarchive">
     <link rel="stylesheet" type="text/css" href="../css/shared.css" />
     <link rel="stylesheet" type="text/css" href="../css/Home.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fullPage.css" />
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/Home.js"></script>
+    <script type="text/javascript" src="../js/fullPage.min.js"></script>
+    <style>
+
+    </style>
 </head>
 
-<body>   
-    <div id="menu-box">
-        <!-- <div class="logo-title"></div> -->
-    </div>    
+<body>
+    <ul id='menu'>
+    <li data-menuanchor="page0" class="active"><a href="#page0">Home</a></li>
+    <li data-menuanchor="page1"><a href="#page1">PROFILE</a></li>
+    <li data-menuanchor="page2"><a href="#page2">RESUME</a></li>
+    <li data-menuanchor="page3"><a href="#page3">PORTFOLIO</a></li>
+    <li data-menuanchor="page4"><a href="#page4">CONTACT</a></li>
+</ul>
+
+<div id='box'>
+    <div class='section page1'>
+        <div class='Item PROFILE'><h2><a href="#page1">PROFILE</a></h2></div>
+        <div class='Item RESUME'><h2><a href="#page2">RESUME</a></h2></div>
+        <div class='Item PORTFOLIO'><h2><a href="#page3">PORTFOLIO</a></h2></div>
+        <div class='Item CONTACT'><h2><a href="#page4">CONTACT</a></h2></div>
+    </div>
+    <div class='section'>
+        <h3>PROFILE</h3>
+        <p>自我簡介</p>
+    </div>
+    <div class='section'>
+        <h3>RESUME</h3>
+        <p>履歷</p>
+    </div>
+    <div class='section'>
+        <h3>PORTFOLIO</h3>
+        <p>作品集</p>
+    </div>
+    <div class='section'>
+        <h3>CONTACT</h3>
+        <p>與我聯繫</p>
+    </div>
+</div>
 </body>
 <script type="text/javascript">
-$(document).ready(function() {
-    //page_load();
+    $('#box').scroll(function(){
+        alert(1);
+    });
+
+$(function(){
+    $('#box').fullpage({
+        anchors: ['page0','page1', 'page2', 'page3', 'page4'],
+        menu: '#menu'
+    });
 });
 </script>
 

@@ -16,7 +16,7 @@ var gConn *sql.DB
 
 func main() {
 	//設定資料庫
-	gConn = sqlutil.Conn("host=127.0.0.1 dbname=Resumes user=postgres password=1234 sslmode=disable")
+	gConn = sqlutil.Conn("host=127.0.0.1 port=5433 dbname=resume user=postgres password=1234 sslmode=disable")
 	if gConn == nil {
 		return
 	}
@@ -24,11 +24,7 @@ func main() {
 
 	//設定路由/路徑
 	fmt.Println("start")
-	http.HandleFunc("view/Home", Home)
-	http.HandleFunc("Resumes", Resumes)
-	http.HandleFunc("/Teach", Teach)
-	http.HandleFunc("/selectMenu", selectMenu)
-	http.HandleFunc("/SelectTeach", SelectTeach)
+	http.HandleFunc("/Home", Home)
 	http.Handle("/css/", http.FileServer(http.Dir("")))
 	http.Handle("/js/", http.FileServer(http.Dir("")))
 	http.Handle("/image/", http.FileServer(http.Dir("")))
