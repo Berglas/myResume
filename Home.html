@@ -8,8 +8,10 @@
     <meta http-equiv="expires" content="0">
     <meta name="googlebot" content="noarchive">
     <link rel="stylesheet" type="text/css" href="../css/shared.css" />
-    <link rel="stylesheet" type="text/css" href="../css/Home.css?2" />
+    <link rel="stylesheet" type="text/css" href="../css/Home.css" />
     <link rel="stylesheet" type="text/css" href="../css/fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/star-ratings.css" />
+    <link rel="stylesheet" type="text/css" href="../css/css/fontawesome.min.css" />  
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/fullPage.min.js"></script>
     <script type="text/javascript" src="../js/Home.js"></script>
@@ -19,33 +21,62 @@
 <body>
     <div id='menu'>
         <ul>
-            <li data-menuanchor="page0" class="active"><a class='lang' key="Itme_HOME" href="#page0">HOME</a></li>
-            <li data-menuanchor="page1"><a class='lang' key="Itme_PROFILE" href="#page1">PROFILE</a></li>
-            <li data-menuanchor="page2"><a class='lang' key="Itme_RESUME" href="#page2">RESUME</a></li>
-            <li data-menuanchor="page3"><a class='lang' key="Itme_PORTFOLIO" href="#page3">PORTFOLIO</a></li>
-            <li data-menuanchor="page4"><a class='lang' key="Itme_CONTACT" href="#page4">CONTACT</a></li>
+            <li data-menuanchor="page0" class="active"><a class='lang' key="Itme_HOME" href="#page0"></a></li>
+            <li data-menuanchor="page1"><a class='lang' key="Itme_PROFILE" href="#page1"></a></li>
+            <li data-menuanchor="page2"><a class='lang' key="Itme_RESUME" href="#page2"></a></li>
+            <li data-menuanchor="page3"><a class='lang' key="Itme_PORTFOLIO" href="#page3"></a></li>
+            <li data-menuanchor="page4"><a class='lang' key="Itme_CONTACT" href="#page4"></a></li>
         </ul>
+        <i class="fa fa-camera-retro"></i>
         <div id='zh-tw' class='translate'>中文</div>
         <div id='en' class='translate'>English</div>
         <div>Language：</div>
     </div>
     <div id='box'>
         <div class='section'>
-            <a class='Item PROFILE' href="#page1"><h2 class='lang' key="Itme_PROFILE">PROFILE</h2></a>
-            <a class='Item RESUME' href="#page2"><h2 class='lang' key="Itme_RESUME">RESUME</h2></a>
-            <a class='Item PORTFOLIO' href="#page3"><h2 class='lang' key="Itme_PORTFOLIO">PORTFOLIO</h2></a>
-            <a class='Item CONTACT' href="#page4"><h2 class='lang' key="Itme_CONTACT">CONTACT</h2></a>
+            <a class='Item PROFILE' href="#page1"><h2 class='lang' key="Itme_PROFILE"></h2></a>
+            <a class='Item RESUME' href="#page2"><h2 class='lang' key="Itme_RESUME"></h2></a>
+            <a class='Item PORTFOLIO' href="#page3"><h2 class='lang' key="Itme_PORTFOLIO"></h2></a>
+            <a class='Item CONTACT' href="#page4"><h2 class='lang' key="Itme_CONTACT"></h2></a>
         </div>
         <div class='section'>
-            <br />
-            <div>
-                <h1>Hello.</h1>
-                <h1>I'm Kevin Lin</h1>
-                <!-- <h2>人生は、決して後戻りできません、進めるのは前だけです。</h2> -->
+            <div style='float: left;height: 100%;width: 40%;'>
+                <div style='height: 40%'>
+                    <h1 class='lang' key="PROFILE_Hi"></h1>
+                    <h1 class='lang' key="PROFILE_myName"></h1>
+                    <h2>人生は、決して後戻りできません、進めるのは前だけです。</h2>
+                </div>
+                <div style='height: 60%'>
+                    <p class='title lang' key="PROFILE_Education_title"></p>
+                    <p class='lang' key="PROFILE_Education1"></p>
+                </div>
             </div>
-            <div>
-                <p class='title'>Education</p>
-                <p> • Da-Yeh University CSIE.(大葉大學資訊工程系)</p>
+            <div style='float: right;height: calc(100% - 130px);width: 60%;padding: 30px 0px 100px 0px;'>
+                <div style='background: rgb(230,220,220);height: calc(100% - 40px);width: calc(100% - 40px); padding:20px'>
+                    <div style='height: calc(100% / 3 );'>
+                        <div style='float: left;height: 100%;width: 50px'>
+                            <img src="../image/open-book.svg" style='height:50px;width: 50px;'>
+                        </div>
+                        <div style='float: left;height: 100%;width:calc(100% - 50px)'>
+                            <h2 class='lang' key='PROFILE_Personality_title1'></h2>
+                            <p class='lang' key='PROFILE_Personality_content1'></p>
+                        </div>
+                    </div>
+                    <div style='height: calc(100% / 3 );'>
+                        <img src="../image/overflowing.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
+                        <h2 class='lang' key='PROFILE_Personality_title2'></h2>
+                        <p class='lang' key='PROFILE_Personality_content2'></p>
+                    </div>
+                    <div style='height: calc(100% / 3 );'>
+                        <div style='float: left;height: 100%;width: 50px'>
+                            <img src="../image/conversation.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
+                        </div>
+                        <div style='float: left;height: 100%;width:calc(100% - 50px)'>
+                            <h2 class='lang' key='PROFILE_Personality_title3'></h2>
+                            <p class='lang' key='PROFILE_Personality_content3'></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class='section'>
@@ -53,7 +84,33 @@
                 <h3>Experience</h3>
             </div>
             <div>
-                <h3>Skill Sets</h3>
+                <h3 class='lang' key='RESUME_skills_front_end'></h3>
+                <div>
+                    <div style='float: left;'>HTML5：</div>
+                    <div style='float: left;' class="star-ratings-sprite">
+                        <span style="width:80%" class="star-ratings-sprite-rating"></span>
+                    </div>
+                    <br>
+                    <p class='lang' key='RESUME_HTML_content'></p>
+                </div>
+                <div>
+                    <div style='float: left;'>CSS：</div>
+                    <div style='float: left;' class="star-ratings-sprite">
+                        <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                    </div>
+                    <br>
+                    <p class='lang' key='RESUME_CSS_content'></p>
+                </div>
+                <div>
+                    <div style='float: left;'>JavaScript：</div>
+                    <div style='float: left;' class="star-ratings-sprite">
+                        <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                    </div>
+                    <br>
+                    <p class='lang' key='RESUME_JS_content'></p>
+                </div>
+                <h3 class='lang' key='RESUME_skills_rear_end'></h3>
+                <h3 class='lang' key='RESUME_skills_others'></h3>
             </div>
         </div>
         <div class='section'>
@@ -68,9 +125,9 @@
 </body>
 <script type="text/javascript">
 $(document).ready(function() {
-    // $('.lang').each(function(index, element) {
-    //         $(this).text(arrLang['ch-tw'][$(this).attr('key')]);
-    //     });
+    $('.lang').each(function(index, element) {
+        $(this).text(arrLang['zh-tw'][$(this).attr('key')]);
+    });
 });
 
 $(function() {
