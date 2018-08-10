@@ -8,10 +8,9 @@
     <meta http-equiv="expires" content="0">
     <meta name="googlebot" content="noarchive">
     <link rel="stylesheet" type="text/css" href="../css/shared.css" />
-    <link rel="stylesheet" type="text/css" href="../css/Home.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Home.css?123" />
     <link rel="stylesheet" type="text/css" href="../css/fullPage.css" />
     <link rel="stylesheet" type="text/css" href="../css/star-ratings.css" />
-    <link rel="stylesheet" type="text/css" href="../css/css/fontawesome.min.css" />  
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/fullPage.min.js"></script>
     <script type="text/javascript" src="../js/Home.js"></script>
@@ -33,90 +32,158 @@
         <div>Language：</div>
     </div>
     <div id='box'>
-        <div class='section'>
+        <div class='section'>           
             <a class='Item PROFILE' href="#page1"><h2 class='lang' key="Itme_PROFILE"></h2></a>
             <a class='Item RESUME' href="#page2"><h2 class='lang' key="Itme_RESUME"></h2></a>
             <a class='Item PORTFOLIO' href="#page3"><h2 class='lang' key="Itme_PORTFOLIO"></h2></a>
             <a class='Item CONTACT' href="#page4"><h2 class='lang' key="Itme_CONTACT"></h2></a>
         </div>
+        <!-- Page PROFILE -->
         <div class='section'>
-            <div style='float: left;height: 100%;width: 40%;'>
-                <div style='height: 40%'>
-                    <h1 class='lang' key="PROFILE_Hi"></h1>
+            <div class='my-info'>
+                <div style='height: 100%;width:100% ;background: rgba(66,66,66,0.8);'>
+                    <h1 class='lang' key="PROFILE_Hi" style=''></h1>
                     <h1 class='lang' key="PROFILE_myName"></h1>
                     <h2>人生は、決して後戻りできません、進めるのは前だけです。</h2>
-                </div>
-                <div style='height: 60%'>
                     <p class='title lang' key="PROFILE_Education_title"></p>
                     <p class='lang' key="PROFILE_Education1"></p>
                 </div>
             </div>
-            <div style='float: right;height: calc(100% - 130px);width: 60%;padding: 30px 0px 100px 0px;'>
-                <div style='background: rgb(230,220,220);height: calc(100% - 40px);width: calc(100% - 40px); padding:20px'>
-                    <div style='height: calc(100% / 3 );'>
-                        <div style='float: left;height: 100%;width: 50px'>
-                            <img src="../image/open-book.svg" style='height:50px;width: 50px;'>
-                        </div>
-                        <div style='float: left;height: 100%;width:calc(100% - 50px)'>
-                            <h2 class='lang' key='PROFILE_Personality_title1'></h2>
-                            <p class='lang' key='PROFILE_Personality_content1'></p>
-                        </div>
+            <div class='my-features'>
+                <div style='height: calc(100% / 3);'>
+                    <img src="../image/open-book.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
+                    <div class='my-features-1'>
+                        <h2 class='lang' key='PROFILE_Personality_title1'></h2>
+                        <p class='lang' key='PROFILE_Personality_content1'></p>
                     </div>
-                    <div style='height: calc(100% / 3 );'>
-                        <img src="../image/overflowing.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
+                </div>
+                <div style='height: calc(100% / 3);'>
+                    <img src="../image/overflowing.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
+                    <div class='my-features-2'>
                         <h2 class='lang' key='PROFILE_Personality_title2'></h2>
                         <p class='lang' key='PROFILE_Personality_content2'></p>
                     </div>
-                    <div style='height: calc(100% / 3 );'>
-                        <div style='float: left;height: 100%;width: 50px'>
-                            <img src="../image/conversation.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
-                        </div>
-                        <div style='float: left;height: 100%;width:calc(100% - 50px)'>
-                            <h2 class='lang' key='PROFILE_Personality_title3'></h2>
-                            <p class='lang' key='PROFILE_Personality_content3'></p>
-                        </div>
+                </div>
+                <div style='height: calc(100% / 3);'>
+                    <img src="../image/conversation.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
+                    <div class='my-features-3'>
+                        <h2 class='lang' key='PROFILE_Personality_title3'></h2>
+                        <p class='lang' key='PROFILE_Personality_content3'></p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Page RESUME -->
         <div class='section'>
-            <div>
+            <div style='height: 30%;width: 100%;'>
                 <h3>Experience</h3>
+                <p class='lang' key='RESUME_Experience_1'></p>
+                <p class='lang' key='RESUME_Experience_2'></p>
+                <p class='lang' key='RESUME_Experience_3'></p>
+                <p class='lang' key='RESUME_Experience_4'></p>
             </div>
-            <div>
-                <h3 class='lang' key='RESUME_skills_front_end'></h3>
-                <div>
-                    <div style='float: left;'>HTML5：</div>
-                    <div style='float: left;' class="star-ratings-sprite">
-                        <span style="width:80%" class="star-ratings-sprite-rating"></span>
+            <div style='background: rgb(204,204,204);height: 70%;width: 80%;padding: 0% 10%'>
+                <div class='skills_title'>Skill Sets.</div>
+                <div class='skills_box'>
+                    <img src="../image/front-end.jpg" style='height:40%;border-radius: 10px;'>
+                    <h3 class='lang' key='RESUME_skills_front_end'></h3>
+                    <div>
+                        <div style='float: left;'>HTML5：</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:80%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_HTML_content'></p>
                     </div>
-                    <br>
-                    <p class='lang' key='RESUME_HTML_content'></p>
-                </div>
-                <div>
-                    <div style='float: left;'>CSS：</div>
-                    <div style='float: left;' class="star-ratings-sprite">
-                        <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                    <div>
+                        <div style='float: left;'>CSS：</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_CSS_content'></p>
                     </div>
-                    <br>
-                    <p class='lang' key='RESUME_CSS_content'></p>
-                </div>
-                <div>
-                    <div style='float: left;'>JavaScript：</div>
-                    <div style='float: left;' class="star-ratings-sprite">
-                        <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                    <div>
+                        <div style='float: left;'>JavaScript：</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_JS_content'></p>
                     </div>
-                    <br>
-                    <p class='lang' key='RESUME_JS_content'></p>
+                    <div>
+                        <div style='float: left;'>React.js：</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_React_content'></p>
+                    </div>
                 </div>
-                <h3 class='lang' key='RESUME_skills_rear_end'></h3>
-                <h3 class='lang' key='RESUME_skills_others'></h3>
+                <div class='skills_box'>
+                    <img src="../image/back-end.jpg" style='height:40%;border-radius: 10px;'>
+                    <h3 class='lang' key='RESUME_skills_back_end'></h3>
+                    <div>
+                        <div style='float: left;'>C#：</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_C#_content'></p>
+                    </div>
+                    <div>
+                        <div style='float: left;'>Golang：</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_Golang_content'></p>
+                    </div>
+                    <div>
+                        <div style='float: left;'>Java：</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_Java_content'></p>
+                    </div>
+                </div>
+                <div class='skills_box'>
+                    <img src="../image/others.jpg" style='height:40%;border-radius: 10px;'>
+                    <h3 class='lang' key='RESUME_skills_others'></h3>
+                    <div>
+                        <div style='float: left;'>DataBase：</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_DB_content'></p>
+                    </div>
+                    <div>
+                        <div style='float: left;'>Git</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_Git_content'></p>
+                    </div>
+                    <div>
+                        <div style='float: left;'>UX：</div>
+                        <div style='float: left;' class="star-ratings-sprite">
+                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <br>
+                        <p class='lang' key='RESUME_UX_content'></p>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Page PORTFOLIO -->
         <div class='section'>
             <h3>PORTFOLIO</h3>
             <p>作品集</p>
         </div>
+        <!-- Page CONTACT -->
         <div class='section'>
             <h3>CONTACT</h3>
             <p>與我聯繫</p>

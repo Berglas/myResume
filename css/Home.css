@@ -1,5 +1,15 @@
+::selection {
+    background: rgb(167, 98, 133);
+    color: rgb(242, 242, 242);
+}
+
+::-moz-selection {
+    background: rgb(167, 98, 133);
+    color: rgb(242, 242, 242);
+}
+
 body {
-    font-family: 'Fjalla One', Arial, sans-serif;
+    font-family: 'Microsoft JhengHei';
 }
 
 h1 {
@@ -109,4 +119,63 @@ h3 {
 .title {
     color: rgb(21, 157, 132);
     font-size: 30px;
+}
+
+.my-info {
+    background-image: url(../image/CONTACT.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 70%;
+    float: left;
+    color: #fff;
+}
+
+.my-features {
+    background: rgba(66, 66, 66, 0.5);
+    left: 50%;
+    height: calc(87% - 80px);
+    padding: 20px;
+    position: absolute;
+    top: 8%;
+    width: 45%;
+}
+
+.my-features-1 {
+    color:#fff;
+    height: 100%;
+    width: calc(100% - 50px);
+}
+
+.my-features-2 {
+    height: 100%;
+    width: calc(100% - 50px);
+}
+
+.my-features-3 {
+    height: 100%;
+    width: calc(100% - 50px);
+}
+
+.skills_title {
+    height: 5%;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.skills_box {
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px rgb(214, 214, 214);
+    background: rgb(242, 242, 242);
+    float: left;
+    height: calc(90% - 90px);
+    width: calc(100% / 3 - 90px);
+    margin: 30px;
+    padding: 15px;
+}
+
+.skills_box img {
+    height: 100px;
+    width: 100%;
 }
