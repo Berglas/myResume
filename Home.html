@@ -7,188 +7,203 @@
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
     <meta name="googlebot" content="noarchive">
-    <link rel="stylesheet" type="text/css" href="../css/shared.css" />
-    <link rel="stylesheet" type="text/css" href="../css/Home.css?123" />
-    <link rel="stylesheet" type="text/css" href="../css/fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="../css/star-ratings.css" />
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/fullPage.min.js"></script>
-    <script type="text/javascript" src="../js/Home.js"></script>
-    <script type="text/javascript" src="../js/translate.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/shared.css" />
+    <link rel="stylesheet" type="text/css" href="css/Home.css?145121" />
+    <link rel="stylesheet" type="text/css" href="css/breeze.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/Home.js?12"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
 </head>
 
 <body>
     <div id='menu'>
         <ul>
-            <li data-menuanchor="page0" class="active"><a class='lang' key="Itme_HOME" href="#page0"></a></li>
+            <li data-menuanchor="page0"><a class='lang' key="Itme_HOME" href="#page0"></a></li>
             <li data-menuanchor="page1"><a class='lang' key="Itme_PROFILE" href="#page1"></a></li>
-            <li data-menuanchor="page2"><a class='lang' key="Itme_RESUME" href="#page2"></a></li>
+            <li data-menuanchor="page2"><a class='lang' key="Itme_SKILLS" href="#page2"></a></li>
             <li data-menuanchor="page3"><a class='lang' key="Itme_PORTFOLIO" href="#page3"></a></li>
             <li data-menuanchor="page4"><a class='lang' key="Itme_CONTACT" href="#page4"></a></li>
         </ul>
-        <i class="fa fa-camera-retro"></i>
-        <div id='zh-tw' class='translate'>中文</div>
-        <div id='en' class='translate'>English</div>
-        <div>Language：</div>
+        <div id='zh-tw' class='translate isSelect'>Ch</div>
+        <div>•</div>
+        <div id='en' class='translate'>En</div>
+        <!-- <div class="fa fa-language fa-2x"></div> -->
     </div>
-    <div id='box'>
-        <div class='section'>           
-            <a class='Item PROFILE' href="#page1"><h2 class='lang' key="Itme_PROFILE"></h2></a>
-            <a class='Item RESUME' href="#page2"><h2 class='lang' key="Itme_RESUME"></h2></a>
-            <a class='Item PORTFOLIO' href="#page3"><h2 class='lang' key="Itme_PORTFOLIO"></h2></a>
-            <a class='Item CONTACT' href="#page4"><h2 class='lang' key="Itme_CONTACT"></h2></a>
-        </div>
-        <!-- Page PROFILE -->
-        <div class='section'>
-            <div class='my-info'>
-                <div style='height: 100%;width:100% ;background: rgba(66,66,66,0.8);'>
-                    <h1 class='lang' key="PROFILE_Hi" style=''></h1>
-                    <h1 class='lang' key="PROFILE_myName"></h1>
-                    <h2>人生は、決して後戻りできません、進めるのは前だけです。</h2>
-                    <p class='title lang' key="PROFILE_Education_title"></p>
-                    <p class='lang' key="PROFILE_Education1"></p>
+    <section id='page0'>
+        <div class="wrapper">
+            <div class='web_title'>
+                <div class="title_style">
+                    <div class="border_left hidden-xs"></div>
+                    <h1>RESUME</h1>
+                    <div class="border_right"></div>
                 </div>
             </div>
-            <div class='my-features'>
-                <div style='height: calc(100% / 3);'>
-                    <img src="../image/open-book.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
-                    <div class='my-features-1'>
-                        <h2 class='lang' key='PROFILE_Personality_title1'></h2>
-                        <p class='lang' key='PROFILE_Personality_content1'></p>
-                    </div>
+            <div class='Item_Box'>
+                <div class='Item'>
+                    <a href="#page1">
+                        <h2 class='lang' key="Itme_PROFILE"></h2>
+                    </a>
                 </div>
-                <div style='height: calc(100% / 3);'>
-                    <img src="../image/overflowing.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
-                    <div class='my-features-2'>
-                        <h2 class='lang' key='PROFILE_Personality_title2'></h2>
-                        <p class='lang' key='PROFILE_Personality_content2'></p>
-                    </div>
+                <div class='Item'>
+                    <a href="#page2">
+                        <h2 class='lang' key="Itme_SKILLS"></h2>
+                    </a>
                 </div>
-                <div style='height: calc(100% / 3);'>
-                    <img src="../image/conversation.svg" style='height:50px;width: 50px;float: left;margin-right: 10px;'>
-                    <div class='my-features-3'>
-                        <h2 class='lang' key='PROFILE_Personality_title3'></h2>
-                        <p class='lang' key='PROFILE_Personality_content3'></p>
-                    </div>
+                <div class='Item'>
+                    <a href="#page3">
+                        <h2 class='lang' key="Itme_PORTFOLIO"></h2>
+                    </a>
                 </div>
-            </div>
-        </div>
-        <!-- Page RESUME -->
-        <div class='section'>
-            <div style='height: 30%;width: 100%;'>
-                <h3>Experience</h3>
-                <p class='lang' key='RESUME_Experience_1'></p>
-                <p class='lang' key='RESUME_Experience_2'></p>
-                <p class='lang' key='RESUME_Experience_3'></p>
-                <p class='lang' key='RESUME_Experience_4'></p>
-            </div>
-            <div style='background: rgb(204,204,204);height: 70%;width: 80%;padding: 0% 10%'>
-                <div class='skills_title'>Skill Sets.</div>
-                <div class='skills_box'>
-                    <img src="../image/front-end.jpg" style='height:40%;border-radius: 10px;'>
-                    <h3 class='lang' key='RESUME_skills_front_end'></h3>
-                    <div>
-                        <div style='float: left;'>HTML5：</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:80%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_HTML_content'></p>
-                    </div>
-                    <div>
-                        <div style='float: left;'>CSS：</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_CSS_content'></p>
-                    </div>
-                    <div>
-                        <div style='float: left;'>JavaScript：</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_JS_content'></p>
-                    </div>
-                    <div>
-                        <div style='float: left;'>React.js：</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_React_content'></p>
-                    </div>
-                </div>
-                <div class='skills_box'>
-                    <img src="../image/back-end.jpg" style='height:40%;border-radius: 10px;'>
-                    <h3 class='lang' key='RESUME_skills_back_end'></h3>
-                    <div>
-                        <div style='float: left;'>C#：</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_C#_content'></p>
-                    </div>
-                    <div>
-                        <div style='float: left;'>Golang：</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_Golang_content'></p>
-                    </div>
-                    <div>
-                        <div style='float: left;'>Java：</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_Java_content'></p>
-                    </div>
-                </div>
-                <div class='skills_box'>
-                    <img src="../image/others.jpg" style='height:40%;border-radius: 10px;'>
-                    <h3 class='lang' key='RESUME_skills_others'></h3>
-                    <div>
-                        <div style='float: left;'>DataBase：</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_DB_content'></p>
-                    </div>
-                    <div>
-                        <div style='float: left;'>Git</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_Git_content'></p>
-                    </div>
-                    <div>
-                        <div style='float: left;'>UX：</div>
-                        <div style='float: left;' class="star-ratings-sprite">
-                            <span style="width:70%" class="star-ratings-sprite-rating"></span>
-                        </div>
-                        <br>
-                        <p class='lang' key='RESUME_UX_content'></p>
-                    </div>
+                <div class='Item'>
+                    <a href="#page4">
+                        <h2 class='lang' key="Itme_CONTACT"></h2>
+                    </a>
                 </div>
             </div>
+            <ul class="bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
-        <!-- Page PORTFOLIO -->
-        <div class='section'>
-            <h3>PORTFOLIO</h3>
-            <p>作品集</p>
+    </section>
+    <!-- Page PROFILE -->
+    <section id='page1'>
+        <div class='profile-left'>
+            <h1 class='lang' key="Itme_PROFILE"></h1>
         </div>
-        <!-- Page CONTACT -->
-        <div class='section'>
-            <h3>CONTACT</h3>
-            <p>與我聯繫</p>
+        <div class='profile-right'>
+            <h1 class='lang' key="PROFILE_Hi" style=''></h1>
+            <h1 class='lang' key="PROFILE_myName"></h1>
+            <h3 class='lang' key="PROFILE_Saying"></h3>
+            <h2 class='lang' key='PROFILE_Personality_1'></h2>
+            <h2 class='lang' key='PROFILE_Personality_2'></h2>
+            <h2 class='lang' key='PROFILE_Personality_3'></h2>
         </div>
-    </div>
+        <div class='profile-content'>
+            <i class="fa fa-graduation-cap fa-2x" style="color: rgba(66,66,66,0.8)"></i>
+            <h3 class='title lang' key="PROFILE_Education_title"></h3>
+            <p class='lang' key="PROFILE_Education1"></p>
+            <br>
+            <i class="fa fa-star fa-2x" style="color: rgba(66,66,66,0.8)"></i>
+            <h3 class='title lang' key="PROFILE_Experience_title"></h3>
+            <p class='lang' key='RESUME_Experience_1'></p>
+            <p class='lang' key='RESUME_Experience_2'></p>
+            <p class='lang' key='RESUME_Experience_3'></p>
+            <p class='lang' key='RESUME_Experience_4'></p>
+            <!-- <div style='float: left;' class="star-ratings-sprite">
+                        <span style="width:80%" class="star-ratings-sprite-rating"></span>
+                    </div> -->
+        </div>
+    </section>
+    <!-- Page RESUME -->
+    <section id='page2'>
+        <div class='skill-left'>
+            <div class='fa fa-arrow-circle-left fa-3x left-button' onclick="delayedUpdatelist(-1)"></div>
+            <div class='skills_box rounditem' style="display: block;">
+                <div class='skill_item'>
+                    <h2 class='lang' key='RESUME_skills_front_end'></h2>
+                    <h3>HTML5：</h3>
+                    <p class='lang' key='RESUME_HTML_content_1'></p>
+                    <p class='lang' key='RESUME_HTML_content_2'></p>
+                    <p class='lang' key='RESUME_HTML_content_3'></p>
+                    <h3>CSS3：</h3>
+                    <p class='lang' key='RESUME_CSS_content_1'></p>
+                    <p class='lang' key='RESUME_CSS_content_2'></p>
+                    <p class='lang' key='RESUME_CSS_content_3'></p>
+                    <h3>JavaScript：</h3>
+                    <p class='lang' key='RESUME_JS_content_1'></p>
+                    <p class='lang' key='RESUME_JS_content_2'></p>
+                    <p class='lang' key='RESUME_JS_content_3'></p>
+                    <h3 class='lang' key='RESUME_summary'></h3>
+                    <p class='lang' key='RESUME_front_end_summary_1'></p>
+                    <p class='lang' key='RESUME_front_end_summary_2'></p>
+                </div>
+                <div class='skill_img' style="background-image: url(image/front-end.jpg);"></div>
+            </div>
+            <div class='skills_box rounditem'>
+                <div class='skill_item'>
+                    <h2 class='lang' key='RESUME_skills_back_end'></h2>
+                    <h3>C#：</h3>
+                    <p class='lang' key='RESUME_C#_content_1'></p>
+                    <p class='lang' key='RESUME_C#_content_2'></p>
+                    <p class='lang' key='RESUME_C#_content_3'></p>
+                    <h3>Golang：</h3>
+                    <p class='lang' key='RESUME_Golang_content_1'></p>
+                    <p class='lang' key='RESUME_Golang_content_2'></p>
+                    <h3>Java：</h3>
+                    <p class='lang' key='RESUME_Java_content'></p>
+                    <h3 class='lang' key='RESUME_summary'></h3>
+                    <p class='lang' key='RESUME_back_end_summary_1'></p>
+                    <p class='lang' key='RESUME_back_end_summary_2'></p>
+                </div>
+                <div class='skill_img' style="background-image: url(image/back-end.jpg);"></div>
+            </div>
+            <div class='skills_box rounditem'>
+                <div class='skill_item'>
+                    <h2 class='lang' key='RESUME_skills_others'></h2>
+                    <h3>DataBase：</h3>
+                    <p class='lang' key='RESUME_DB_content_1'></p>
+                    <p class='lang' key='RESUME_DB_content_2'></p>
+                    <h3>Git</h3>
+                    <p class='lang' key='RESUME_Git_content'></p>
+                    <h3>UX：</h3>
+                    <p class='lang' key='RESUME_UX_content_1'></p>
+                    <p class='lang' key='RESUME_UX_content_2'></p>
+                    <h3 class='lang' key='RESUME_summary'></h3>
+                    <p class='lang' key='RESUME_others_summary_1'></p>
+                    <p class='lang' key='RESUME_others_summary_2'></p>
+                    <p class='lang' key='RESUME_others_summary_3'></p>
+                </div>
+                <div class='skill_img' style="background-image: url(image/Blog_coding-questions.jpg);"></div>
+            </div>
+            <div class='fa fa-arrow-circle-right fa-3x right-button' onclick="delayedUpdatelist(1)"></div>
+        </div>
+        <div class='skill-right'>
+            <h1 class='lang' key="Itme_SKILLS"></h1>
+        </div>
+    </section>
+    <!-- Page PORTFOLIO -->
+    <section id='page3'>
+        <h3>PORTFOLIO</h3>
+        <p>作品集</p>
+    </section>
+    <!-- Page CONTACT -->
+    <section id='page4'>
+        <div class='communicate-box'>
+            <h1 class='lang' key='Itme_CONTACT'></h1>
+            <br>
+            <form action="https://formspree.io/sasuke01260616@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" size="30" style="margin: 5px;padding: 10px 15px;">
+                <input type="email" name="_replyto" placeholder="Your Email" size="30" style="margin: 5px;padding: 10px 15px;">
+                <textarea cols="68" rows="15" name="content" placeholder="Message..." style="resize:none;margin: 5px;padding: 10px 15px;"></textarea>
+                <br>
+                <input type="submit" value="Send" class='button lang' style="width: 200px;">
+            </form>
+        </div>
+        <div class="thx-box">
+            <h1 class='lang' key='CONTACT_thx_info_title'></h1>
+            <p class='lang' key='CONTACT_thx_info_content'></p>
+        </div>
+        <div class="footer-box">
+            <div class="fa fa-envelope fa-2x icon-2x"></div>
+            <span>：sasuke01260616@gmail.com</span>
+            <br>
+            <div class="fa fa-phone-square fa-2x icon-2x"></div>
+            <span>：+886 0988-612-516</span>
+            <br>
+            <br>
+            <p>Copyright © Kevin Lin 2018</p>
+        </div>
+    </section>
 </body>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -198,26 +213,26 @@ $(document).ready(function() {
 });
 
 $(function() {
-    $('#box').fullpage({
-        anchors: ['page0', 'page1', 'page2', 'page3', 'page4'],
-        menu: '#menu'
+    $('a[href*=#]:not([href=#])').click(function() {
+
+        var target = $(this.hash);
+
+        $('html, body').animate({
+            scrollTop: target.offset().top
+
+        }, 300);
+
+        return false;
     });
+});
 
-    $(window).resize(function() {
-        autoScrolling();
+$(function() {
+    $('.translate').click(function() {
+        $('.translate').each(function(index, el) {
+            el.classList.remove("isSelect");
+        });
+        this.classList.add("isSelect");
     });
-
-    function autoScrolling() {
-        var $ww = $(window).width();
-        if ($ww < 1024) {
-            $.fn.fullpage.setAutoScrolling(false);
-        } else {
-            $.fn.fullpage.setAutoScrolling(true);
-        }
-    }
-
-    autoScrolling();
-
 });
 </script>
 

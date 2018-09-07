@@ -1,21 +1,21 @@
-function page_load() {
-    $.ajax({
-        url: '/selectMenu',
-        type: 'post',
-        dataType: 'json',
-        success: function(result) {
-            var MenuHTML = "<div><ul>";
-            for (var i = 0; i < result.length; i++) {                
-                // MenuHTML += "<li onclick=\"gotoURL(\'" + result[i]["html_url"] + "\')\">" + result[i]["chinese_name"] + "</li>"
-                MenuHTML += "<li onclick=\"gotoURL(\'" + result[i]["html_url"] + "\')\"><a href='#' class='animBtn themeD'>" + result[i]["chinese_name"] + "</a></li>"
-            }
-            MenuHTML += "</div></ul>";
-            $('#menu-item').append(MenuHTML);
-        },
-        error: function(request, ajaxOptions, thrownError) {}
-    });
+var i = 0;
+
+function delayedUpdatelist(delta) {　　
+    var $rounditem = $('.rounditem').toArray();　　
+    var size = $rounditem.length;
+    i += delta;
+    if (i < size && i > 0) {　
+
+    } else if (i == -1) {　
+        i = size - 1;
+
+    }　　
+    else {
+        i = 0;　　
+
+    }
+
+    $('.rounditem').fadeOut("slow");
+    $('.rounditem:eq(' + i + ')').delay(500).fadeIn("slow");
 }
 
-function gotoURL(url) {
-    $('#myiframe').attr("src", "../" + url);
-}
