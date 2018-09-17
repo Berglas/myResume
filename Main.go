@@ -5,11 +5,17 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"time"
 
 	_ "github.com/lib/pq"
 )
 
 //var gConn *sql.DB
+var gTempData templateData
+
+type templateData struct {
+	Version string
+}
 
 func main() {
 	//設定資料庫
@@ -34,6 +40,7 @@ func main() {
 }
 
 func Home(w http.ResponseWriter, r *http.Request) {
+	gTempData.Version = time.Now().Format("20180911010203")
 	t, _ := template.ParseFiles("Home.html")
-	t.Execute(w, nil)
+	t.Execute(w, gTempData)
 }
