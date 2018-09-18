@@ -33,7 +33,7 @@ func main() {
 	http.Handle("/image/", http.FileServer(http.Dir("")))
 	http.Handle("/fonts/", http.FileServer(http.Dir("")))
 	//設定Server
-	err := http.ListenAndServe(":443", nil)
+	err := http.ListenAndServe(":80", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
