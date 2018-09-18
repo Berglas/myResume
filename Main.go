@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"html/template"
-	"log"
 	"net/http"
+	"os"
 	"time"
 
 	_ "github.com/lib/pq"
@@ -33,9 +33,13 @@ func main() {
 	http.Handle("/image/", http.FileServer(http.Dir("")))
 	http.Handle("/fonts/", http.FileServer(http.Dir("")))
 	//設定Server
-	err := http.ListenAndServe(":443", nil)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "443"
+	}
+	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
-		log.Fatal("ListenAndServe: ", err)
+		panic(err)
 	}
 }
 
