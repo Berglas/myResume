@@ -6,8 +6,6 @@ import (
 	"net/http"
 	"os"
 	"time"
-
-	_ "github.com/lib/pq"
 )
 
 //var gConn *sql.DB
@@ -27,7 +25,7 @@ func main() {
 
 	//設定路由/路徑
 	fmt.Println("start")
-	http.HandleFunc("/Home", Home)
+	http.HandleFunc("/", Home)
 	http.Handle("/css/", http.FileServer(http.Dir("")))
 	http.Handle("/js/", http.FileServer(http.Dir("")))
 	http.Handle("/image/", http.FileServer(http.Dir("")))
