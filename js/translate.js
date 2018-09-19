@@ -65,7 +65,8 @@ var arrLang = {
         'PORTFOLIO_item_title_7':'F2E：My package',
         'PORTFOLIO_item_description_7':'Customize some suite features with JS and CSS.',
         'CONTACT_thx_info_title': 'Thank you for visiting.',
-        'CONTACT_thx_info_content': 'There is no end to the design road. In the future, I will be more sophisticated. If you like my work or have related questions, please feel free to contact me. Have a good  day.',
+        'CONTACT_thx_info_content_1': 'There is no end to the design road. In the future, I will be more sophisticated. If you like my creation or have related questions, please feel free to contact me. Have a good  day.',
+        'CONTACT_thx_info_content_2': 'Have a good day.',
         'CONTACT_thx_info_signature': '-Kevin Lin.',
     },
     'zh-tw': {
@@ -134,7 +135,8 @@ var arrLang = {
         'PORTFOLIO_item_title_7':'F2E：自創套件',
         'PORTFOLIO_item_description_7':'使用JS與CSS自定義一些套件功能。',
         'CONTACT_thx_info_title': '感謝您的拜訪',
-        'CONTACT_thx_info_content': '設計的路上沒有盡頭，未來我會更加精進自己實力，如果你喜歡我的作品，或者有相關問題，都歡迎與我聯繫。祝您有愉快的一天。',
+        'CONTACT_thx_info_content_1': '設計的路上沒有盡頭，未來我會更加精進自己實力，如果你喜歡我的作品，或者有相關問題，都歡迎與我聯繫。',
+        'CONTACT_thx_info_content_2': '祝您有愉快的一天。',
         'CONTACT_thx_info_signature': '-林建成',
     }
 };
